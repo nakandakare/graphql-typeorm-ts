@@ -1,0 +1,35 @@
+{
+  "name": "graphql-typeorm-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts --exec ts-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nakandakare/graphql-typeorm-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nakandakare/graphql-typeorm-ts/issues"
+  },
+  "homepage": "https://github.com/nakandakare/graphql-typeorm-ts#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.18.2",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.0.0",
+    "typeorm": "^0.2.28"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.11.5",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}
