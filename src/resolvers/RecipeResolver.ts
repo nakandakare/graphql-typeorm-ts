@@ -44,11 +44,13 @@ export class RecipeResolver {
     }
 
     @Query(() => [Recipe])
+    @UseMiddleware(IsAuth)
     async getRecipes() {
         return await Recipe.find()
     }
 
     @Query(() => [Recipe])
+    @UseMiddleware(IsAuth)
     async getOneRecipe(@Arg("name", { nullable: true }) name: string, @Arg("description", { nullable: true }) description: string, @Arg("ingredients", { nullable: true }) ingredients: string) {
         return await Recipe.find({ where: [{name},{description},{ingredients}]});
     }
